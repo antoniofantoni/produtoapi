@@ -32,7 +32,7 @@ public class ProdutoController {
     O List<Produto>
 Tipo de Retorno: A parte List<Produto> especifica que o méctodo vai retornar uma lista (List) de objetos do tipo Produto.
 List: List é uma interface do Java que representa uma coleção ordenada de elementos, onde cada elemento tem uma posição específica. Em Spring Data JPA,
-o méctodo findAll() do repositório retorna uma List, então utilizamos o mesmo tipo no mé t odo para assegurar compatibilidade. TESTE FINAL.
+o méctodo findAll() do repositório retorna uma List, então utilizamos o mesmo tipo no mé t odo para assegurar compatibilidade. TESTE FINAL2.
     * */
     public List<Produto> obterTodosProdutos() {
 
