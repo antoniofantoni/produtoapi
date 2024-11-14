@@ -4,7 +4,6 @@ import io.github.cursodsousa.produtosapi.model.Produto;
 import io.github.cursodsousa.produtosapi.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.UUID;
 
@@ -13,11 +12,15 @@ import java.util.UUID;
 
 public class ProdutoController {
 
-    @Autowired
+    //Poderia ter sido usado o @Autowired aqui, aí o construtor não precisaria ter sido criado manualmente logo abaixo
     private ProdutoRepository produtoRepository;
 
+    public ProdutoController(ProdutoRepository produtoRepository) {
+        this.produtoRepository = produtoRepository;
+    }
 
     @PostMapping
+
     public Produto salvar(@RequestBody Produto produto){
 
         var id = UUID.randomUUID().toString();
