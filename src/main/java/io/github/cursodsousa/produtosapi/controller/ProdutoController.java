@@ -2,7 +2,7 @@ package io.github.cursodsousa.produtosapi.controller;
 
 import io.github.cursodsousa.produtosapi.model.Produto;
 import io.github.cursodsousa.produtosapi.repository.ProdutoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
